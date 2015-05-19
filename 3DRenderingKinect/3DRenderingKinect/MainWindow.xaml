@@ -10,14 +10,13 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
-
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="250" />
-                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Image Grid.Row="0" Grid.Column="0" Name="colorImage"/>
-            <Image Grid.Row="0" Grid.Column="1" Name="depthMappedColorImage" Margin="0,0,-65,0"/>
+            <Image Grid.Row="0" Grid.Column="0" Name="colorImage" />
+            <Image Grid.Row="0" Name="depthMappedColorImage" Margin="257,0,0,0" Grid.ColumnSpan="2" />
         </Grid>
     </Grid>
 </Window>
