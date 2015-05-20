@@ -7,16 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Image Grid.Row="0" Grid.Column="0" Name="colorImage" />
-            <Image Grid.Row="0" Name="depthMappedColorImage" Margin="257,0,0,0" Grid.ColumnSpan="2" />
-        </Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="0" Grid.Column="0" Source="{Binding ColorImageSource}"  Stretch="UniformToFill"/>
+        <Image Grid.Row="0" Grid.Column="1" Source="{Binding DepthImageSource}" Stretch="UniformToFill"/>
     </Grid>
 </Window>
+    
+  
