@@ -5,7 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3DRenderingKinect"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="MainWindow"
+        Height="350" 
+        Width="525"
+        Closing="MainWindow_Closing" 
+        ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -14,8 +20,8 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Image Grid.Row="0" Grid.Column="0" Source="{Binding ColorImageSource}"  Stretch="UniformToFill"/>
-        <Image Grid.Row="0" Grid.Column="1" Source="{Binding DepthImageSource}" Stretch="UniformToFill"/>
+        <Image Grid.Row="0" Grid.Column="0" Source="{Binding ColorImageSource}"  Stretch="None"/>
+        <Image Grid.Row="0" Grid.Column="1" Source="{Binding DepthImageSource}" Stretch="None"/>
     </Grid>
 </Window>
     
